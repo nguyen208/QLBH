@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_baocaohd" targetNamespace="http://tempuri.org/DataSet_baocaohd.xsd" xmlns:mstns="http://tempuri.org/DataSet_baocaohd.xsd" xmlns="http://tempuri.org/DataSet_baocaohd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBANHANGT3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBANHANGT3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLBANHANGT3.Properties.Settings.GlobalReference.Default.QLBANHANGT3ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_reportTableAdapter" GeneratorDataComponentClassName="View_reportTableAdapter" Name="View_report" UserDataComponentName="View_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLBANHANGT3ConnectionString (Settings)" DbObjectName="QLBANHANGT3.dbo.View_report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Mahd, Tenkh, Tennv, Tenhang, Dongiaban, Soluongmua, Thanhtien FROM dbo.View_report</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mahd" DataSetColumn="Mahd" />
+              <Mapping SourceColumn="Tenkh" DataSetColumn="Tenkh" />
+              <Mapping SourceColumn="Tennv" DataSetColumn="Tennv" />
+              <Mapping SourceColumn="Tenhang" DataSetColumn="Tenhang" />
+              <Mapping SourceColumn="Dongiaban" DataSetColumn="Dongiaban" />
+              <Mapping SourceColumn="Soluongmua" DataSetColumn="Soluongmua" />
+              <Mapping SourceColumn="Thanhtien" DataSetColumn="Thanhtien" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_baocaohd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_baocaohd" msprop:Generator_UserDSName="DataSet_baocaohd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_report" msprop:Generator_TableClassName="View_reportDataTable" msprop:Generator_TableVarName="tableView_report" msprop:Generator_TablePropName="View_report" msprop:Generator_RowDeletingName="View_reportRowDeleting" msprop:Generator_RowChangingName="View_reportRowChanging" msprop:Generator_RowEvHandlerName="View_reportRowChangeEventHandler" msprop:Generator_RowDeletedName="View_reportRowDeleted" msprop:Generator_UserTableName="View_report" msprop:Generator_RowChangedName="View_reportRowChanged" msprop:Generator_RowEvArgName="View_reportRowChangeEvent" msprop:Generator_RowClassName="View_reportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mahd" msprop:Generator_ColumnVarNameInTable="columnMahd" msprop:Generator_ColumnPropNameInRow="Mahd" msprop:Generator_ColumnPropNameInTable="MahdColumn" msprop:Generator_UserColumnName="Mahd">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tenkh" msprop:Generator_ColumnVarNameInTable="columnTenkh" msprop:Generator_ColumnPropNameInRow="Tenkh" msprop:Generator_ColumnPropNameInTable="TenkhColumn" msprop:Generator_UserColumnName="Tenkh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tennv" msprop:Generator_ColumnVarNameInTable="columnTennv" msprop:Generator_ColumnPropNameInRow="Tennv" msprop:Generator_ColumnPropNameInTable="TennvColumn" msprop:Generator_UserColumnName="Tennv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tenhang" msprop:Generator_ColumnVarNameInTable="columnTenhang" msprop:Generator_ColumnPropNameInRow="Tenhang" msprop:Generator_ColumnPropNameInTable="TenhangColumn" msprop:Generator_UserColumnName="Tenhang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dongiaban" msprop:Generator_ColumnVarNameInTable="columnDongiaban" msprop:Generator_ColumnPropNameInRow="Dongiaban" msprop:Generator_ColumnPropNameInTable="DongiabanColumn" msprop:Generator_UserColumnName="Dongiaban" type="xs:int" minOccurs="0" />
+              <xs:element name="Soluongmua" msprop:Generator_ColumnVarNameInTable="columnSoluongmua" msprop:Generator_ColumnPropNameInRow="Soluongmua" msprop:Generator_ColumnPropNameInTable="SoluongmuaColumn" msprop:Generator_UserColumnName="Soluongmua" type="xs:int" minOccurs="0" />
+              <xs:element name="Thanhtien" msprop:Generator_ColumnVarNameInTable="columnThanhtien" msprop:Generator_ColumnPropNameInRow="Thanhtien" msprop:Generator_ColumnPropNameInTable="ThanhtienColumn" msprop:Generator_UserColumnName="Thanhtien" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_report" />
+      <xs:field xpath="mstns:Mahd" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
